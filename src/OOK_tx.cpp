@@ -50,7 +50,7 @@ int main() {
 
 	sdr::blocks::SignalSourceBlock<complex<float>> signalSourceBlock;
 	signalSourceBlock.setSamplingFrequency(SAMPLE_RATE);
-	signalSourceBlock.setFrequency(CARRIER_FREQUENCY);
+	signalSourceBlock.setSignalFrequency(CARRIER_FREQUENCY);
 	signalSourceBlock.setAmplitude(CARRIER_AMPLITUDE);
 	signalSourceBlock.setWaveform(sdr::radio::Waveform::WAVEFORM_COS);
 	signalSourceBlock.setOffset(complex<float>(0.0, 0.0));
